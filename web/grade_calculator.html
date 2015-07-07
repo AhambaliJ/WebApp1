@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Grade Calculator</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="Resources/bootstrap-3.3.5-dist/css/bootstrap.css" rel="stylesheet" type="text/css"/>
+    </head>
+    <body>
+        <script src="https://code.jquery.com/jquery.js"></script>
+        <div>
+            <form action="./gradeCalc" method="post">
+            <table>
+                <tr>
+                    <td>Midterm</td>
+                    <td><input type="text" name="mid"></td>
+                    <td>(30%)</td>
+                </tr>
+                <tr>
+                    <td>Final</td>
+                    <td><input type="text" name="fin"></td>
+                    <td>(30%)</td>
+                </tr>
+                <tr>
+                    <td>Project</td>
+                    <td><input type="text" name="pro"></td>
+                    <td>(40%)</td>
+                </tr>
+                <tr>
+                    <td><input type="submit" value="Get Result"></td>
+                </tr>
+            </table>
+            </form>
+        </div>
+        <script src="Resources/bootstrap-3.3.5-dist/js/bootstrap.js" type="text/javascript"></script>
+    </body>
+</html>

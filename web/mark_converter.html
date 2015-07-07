@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Mark Converter</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="Resources/bootstrap-3.3.5-dist/css/bootstrap.css" rel="stylesheet" type="text/css"/>
+    </head>
+    <body>
+        <script src="https://code.jquery.com/jquery.js"></script>
+        <div>
+            <form action="./markConv" method="post">
+            <table>
+                <tr>
+                    <td>Mark in Percent</td>
+                    <td><input type="text" name="markTextBox"></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><input type="checkbox" name="gradeCheckBox" value="1">Grade
+                    <input type="checkbox" name="pointCheckBox" value="1">Point</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><input type="submit" value="Convert" name="convertButton"></td>
+                </tr>
+            </table>
+            </form>
+        </div>
+        <script src="Resources/bootstrap-3.3.5-dist/js/bootstrap.js" type="text/javascript"></script>
+    </body>
+</html>

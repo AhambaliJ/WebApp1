@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Survey</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+         <script src="https://code.jquery.com/jquery.js"></script>
+        <script src="Resources/gen_validatorv4.js" type="text/javascript"></script>
+        <script>
+            $(function()
+                {
+                    $("#navbar").load("navbar.html");
+                }       
+             );
+        </script>
+        <link href="Resources/bootstrap-3.3.5-dist/css/bootstrap-theme.css" rel="stylesheet" type="text/css"/>
+        <link href="Resources/bootstrap-3.3.5-dist/css/bootstrap.css" rel="stylesheet" type="text/css"/>
+        <link rel="import" href="navbar.shtml">
+    </head>
+    <body>
+        <div id="navbar"></div>
+        <div>
+            <form action="./PreviewSurvey" id="form" method="post">
+                <center> 
+                    <table>
+                    <tr><h2>Listener Survey</h2></tr>
+                    
+                    <tr><th colspan="7"><h4>User Information</h4></th></tr>
+                    <tr>
+                        <td>Name :</td>
+                        <td><input id="name" type="text" name="name"></td>
+                        <td>*</td>
+                    </tr>
+                    <tr>
+                        <td>E-mail :</td>
+                        <td><input id="email" type="email" name="email"></td>
+                        <td>*</td>
+                    </tr>
+                    <tr>
+                        <td>Contact Number :</td>
+                        <td><input id="number" type="number" name="number"></td>
+                    </tr>
+                    
+                    <tr><th colspan="7"><h4>Musical Preference</h4></th></tr>
+                    <tr>
+                        <td colspan="2">
+                        <center>
+                            <input type="checkbox" name="easy" value="1">Easy Listening<br/>
+                            <input type="checkbox" name="rock" value="1">Rock n' Roll<br/>
+                            <input type="checkbox" name="jazz" value="1">Jazz<br/>
+                            <input type="checkbox" name="class" value="1">Classical<br/>
+                            <input type="checkbox" name="folk" value="1">Folk<br/>
+                            <input type="checkbox" name="heavy" value="1">Heavy Metal
+                        </center>
+                        </td>
+                    </tr>
+           
+                    <tr><th colspan="7"><h4>Favorite Music Decade</h4></th></tr>
+                    <tr>
+                        <td colspan="2">
+                        <center>
+                            <select name="musicFav">
+                            <option value="1">Fifties</option>
+                            <option value="2">Sixties</option>
+                            <option value="3">Seventies</option>
+                            <option value="4">Eighties</option>
+                            <option value="5">Nineties</option>
+                            <option value="6">Tens</option>
+                            </select>
+                        </center>
+                        </td>
+                    </tr>
+                    
+                    <tr><th colspan="7"><h4>Preferred Day to Listen Music</h4></th></tr>
+                    <tr>
+                        <td colspan="2">
+                        <center>
+                            <input type="radio" name="musicDay" value="1">Monday<br/>
+                            <input type="radio" name="musicDay" value="2">Tuesday<br/>
+                            <input type="radio" name="musicDay" value="3">Wednesday<br/>
+                            <input type="radio" name="musicDay" value="4">Thursday<br/>
+                            <input type="radio" name="musicDay" value="5">Friday<br/>
+                            <input type="radio" name="musicDay" value="6">Saturday<br/>
+                            <input type="radio" name="musicDay" value="7">Sunday
+                        </center>
+                        </td>
+                    </tr>
+                    
+                    <tr><th colspan="7"><h4>I Listen to WARNARadio</h4></th></tr>
+                    <tr>
+                        <td colspan="2">
+                        <center>
+                            <select name="listen">
+                            <option value="1">Every Day</option>
+                            <option value="2">One Day a Week</option>
+                            <option value="3">2 or 3 Days</option>
+                            <option value="4">4 or 5 Days</option>
+                            </select>
+                        </center>
+                        </td>
+                    </tr>
+                    
+                    <tr><th colspan="7"><h4>Prefer to Listen</h4></th></tr>
+                    <tr>
+                        <td colspan="2">
+                        <center>
+                            <input type="checkbox" name="home" value="1">At Home<br/>
+                            <input type="checkbox" name="car" value="2">In My Car<br/>
+                            <input type="checkbox" name="work" value="3">At Work
+                        </center>
+                        </td>
+                    </tr>
+                    
+                    <tr><th colspan="7"><h4>Comments/Suggestion</h4></th></tr>
+                    <tr>
+                    <center>
+                        <td colspan="7"><textarea name="comment" cols="50" rows="3"></textarea></td>
+                    </center>
+                    </tr>
+                   
+                    <tr><th colspan="7"><h4>Subscribe to newsletter</h4></th></tr>
+                    <tr><td colspan="2"><center>Subscribe : <input type="checkbox" name="placePref" value="1"></center></td></tr>
+                    
+                    <tr><td colspan="2"><center><input type="submit" value="Submit"></center></td></tr>
+                    
+                    </table>
+                </center>
+            </form>
+        </div>
+        <script src="Resources/bootstrap-3.3.5-dist/js/bootstrap.js" type="text/javascript"></script>
+    </body>
+</html>
+
+<script type="text/javscript">
+    var frmValidator = new Validator("form");
+    
+        frmvalidator.addValidation("name","req","Please enter your name");
+        
+        frmvalidator.addValidation("email","req","Please enter your email");
+        frmvalidator.addValidation("email","email","Entered e-mail is wrong");
+        
+        frmvalidator.addValidation("number","num");
+</script>
