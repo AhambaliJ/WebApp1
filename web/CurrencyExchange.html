@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Currency Exchange</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="Resources/bootstrap-3.3.5-dist/css/bootstrap.css" rel="stylesheet" type="text/css"/>
+    </head>
+    <body>
+        <script src="https://code.jquery.com/jquery.js"></script>
+        <div>
+            <form action="./ECServelet" method="post">
+            <table align="center">
+                <tr>
+                <th colspan="2">Currency Exchange</th>
+                </tr>
+                <tr>
+                    <td>
+                        <table>
+                            <tr>
+                                <td>VND:</td><td colspan="2"><input name="vndTextBox"></td>
+                            </tr>
+                            <tr>
+                                <td><input type="radio" name="desCurrencyRadio" value="1"> USD</td>
+                                <td><input type="radio" name="desCurrencyRadio" value="2">EUR</td>
+                                <td><input type="radio" name="desCurrencyRadio" value="3">JPY</td>
+                            </tr>
+                        </table>
+                    <td>
+                        <table>
+                            <tr><th colspan="2">Exchange Rates</th></tr>
+                            <tr>
+                                <td>Currency</td>
+                                <td>Rates</td>
+                            </tr>
+                            <tr>
+                                <td>USD</td>
+                                <td>16.452</td>
+                            </tr>
+                            <tr>
+                                <td>EUR</td>
+                                <td>25,179.38</td>
+                            </tr>
+                            <tr>
+                                <td>JPY</td>
+                                <td>151.23</td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                    <center><button type="submit" name="exchangeButton">Exchange</button></center>
+                    </td>
+                </tr>
+            </table>
+            </form>
+        </div>
+        <script src="Resources/bootstrap-3.3.5-dist/js/bootstrap.js" type="text/javascript"></script>
+    </body>
+</html>
