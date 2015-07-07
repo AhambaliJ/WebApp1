@@ -6,13 +6,21 @@ and open the template in the editor.
 -->
 <html>
     <head>
-        <title>TODO supply a title</title>
+        <title>Index Page to Assignments</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link href="Resources/bootstrap-3.3.5-dist/css/bootstrap.css" rel="stylesheet" type="text/css"/>
+        <script src="https://code.jquery.com/jquery.js"></script>
+        <script>
+            $(function()
+                {
+                    $("#navbar").load("navbar.html");
+                }       
+             );
+        </script>
     </head>
     <body>
-        <script src="https://code.jquery.com/jquery.js"></script>
+        <div id="navbar"></div>
         <div>
             <a href="bmi.html">BMI Calculator</a>
             <br/>
